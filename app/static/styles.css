@@ -1,0 +1,18 @@
+:root { --bg:#0f172a; --fg:#e2e8f0; --muted:#94a3b8; --accent:#38bdf8; --danger:#ef4444; --card:#111827; }
+*{box-sizing:border-box} body{margin:0;font-family:system-ui;background:var(--bg);color:var(--fg)}
+.container{max-width:980px;margin:0 auto;padding:16px}
+.topbar{background:#0b1220;border-bottom:1px solid #1f2937}
+.brand{color:var(--fg);text-decoration:none;font-weight:700;margin-right:12px}
+.topbar nav a{color:var(--muted);text-decoration:none;margin-right:12px}
+h1,h2{margin:16px 0}
+.table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid #1f2937;border-radius:12px;overflow:hidden}
+.table th,.table td{padding:12px;border-bottom:1px solid #1f2937}
+.table th{text-align:left;color:var(--muted);font-weight:600}
+.table tr:hover{background:#0f1a2d}
+.btn,.btn-outline,.btn-danger{display:inline-block;padding:8px 14px;border-radius:10px;text-decoration:none;border:1px solid transparent;background:var(--accent);color:#00111a;font-weight:600;cursor:pointer}
+.btn-outline{background:transparent;border-color:var(--accent);color:var(--fg)}
+.btn-danger{background:var(--danger);color:white}
+.form label{display:block;margin-bottom:12px}
+.form input,.form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #334155;background:#0b1220;color:var(--fg)}
+.actions{display:flex;gap:10px;margin-top:12px}
+.footer{border-top:1px solid #1f2937;margin-top:24px;color:var(--muted)}

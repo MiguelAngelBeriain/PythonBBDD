@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>{{ cliente.nombre }}</h1>
+<p><strong>Email:</strong> {{ cliente.email }}</p>
+<p><strong>Telefono:</strong> {{ cliente.telefono }}</p>
+
+<div class="actions">
+    <a class="btn" href="/clientes/{{ cliente.id }}/editar">Editar</a>
+    <form method="post" action="/clientes/{{ cliente.id }}/eliminar" onsubmit="return confirm('¿Eliminar este cliente?');" style="display:inline">
+        <button class="btn-danger" type="submit">Eliminar</button>
+    </form>
+    <a class="btn-outline" href="/clientes">Volver</a>
+</div>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>{{ producto.nombre }}</h1>
+  <p>{{ producto.descripcion or "Sin descripción" }}</p>
+  <p><strong>Precio:</strong> {{ "%.2f"|format(producto.precio) }}</p>
+  <p><strong>Stock:</strong> {{ producto.stock }}</p>
+
+  <div class="actions">
+    <a class="btn" href="/productos/{{ producto.id }}/editar">Editar</a>
+    <form method="post" action="/productos/{{ producto.id }}/eliminar" onsubmit="return confirm('¿Eliminar este producto?');" style="display:inline">
+      <button class="btn-danger" type="submit">Eliminar</button>
+    </form>
+    <a class="btn-outline" href="/productos">Volver</a>
+  </div>
+{% endblock %}
