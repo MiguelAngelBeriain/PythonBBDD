@@ -1163,6 +1163,9 @@
     <Compile Include="app\database.py" />
     <Compile Include="app\main.py" />
     <Compile Include="app\models.py" />
+    <Compile Include="app\migrate_add_metadatos.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="app\__init__.py" />
     <Compile Include="PythonBBDD.py" />
     <Compile Include="venv\env\Lib\site-packages\annotated_types\test_cases.py" />
